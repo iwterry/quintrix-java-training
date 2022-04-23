@@ -1,9 +1,8 @@
 package com.quintrix.java.training.iwterry.springboot.restapi.jpa.repository;
 
-import com.quintrix.java.training.iwterry.springboot.restapi.jpa.model.Person;
+import com.quintrix.java.training.iwterry.springboot.restapi.jpa.entity.Person;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
-import org.springframework.stereotype.Repository;
 
 import java.util.List;
 

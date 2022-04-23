@@ -3,6 +3,6 @@ com\quintrix\java\training\iwterry\springboot\restapi\jpa\controller\PersonContr
 com\quintrix\java\training\iwterry\springboot\restapi\jpa\repository\PersonRepository.class
 com\quintrix\java\training\iwterry\springboot\restapi\jpa\service\PersonServiceImpl.class
 com\quintrix\java\training\iwterry\springboot\restapi\jpa\exception\PersonNotFoundException.class
-com\quintrix\java\training\iwterry\springboot\restapi\jpa\model\Person.class
+com\quintrix\java\training\iwterry\springboot\restapi\jpa\entity\Person.class
 com\quintrix\java\training\iwterry\springboot\restapi\jpa\FifthWeekAssignmentApplication.class
 com\quintrix\java\training\iwterry\springboot\restapi\jpa\service\PersonService.class

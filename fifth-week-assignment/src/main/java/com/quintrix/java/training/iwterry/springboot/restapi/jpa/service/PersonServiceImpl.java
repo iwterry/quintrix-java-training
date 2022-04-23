@@ -2,7 +2,7 @@ package com.quintrix.java.training.iwterry.springboot.restapi.jpa.service;
 
 import com.quintrix.java.training.iwterry.springboot.restapi.jpa.dto.PersonDto;
 import com.quintrix.java.training.iwterry.springboot.restapi.jpa.exception.PersonNotFoundException;
-import com.quintrix.java.training.iwterry.springboot.restapi.jpa.model.Person;
+import com.quintrix.java.training.iwterry.springboot.restapi.jpa.entity.Person;
 import com.quintrix.java.training.iwterry.springboot.restapi.jpa.repository.PersonRepository;
 import org.springframework.stereotype.Service;
 
