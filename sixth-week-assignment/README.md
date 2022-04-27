@@ -1,0 +1,13 @@
+Sixth week's assignment
+- Continuation of fifth week's assignment with incorporating Spring RestTemplate
+  - Incorporate the use of path variables, query parameters, request body, and headers while using RestTemplate.
+    - CommentController class will use RestTemplate (indirectly) for POST and GET requests to https://gorest.co.in/public/v2/comments and providing the data back to the client.
+      - GET /api/v1/comments
+        - NOTE: You search and get comments by using the "name" query parameter to filter comments that will match a comment's name field.
+      - GET /api/v1/comments/{id}
+      - POST /api/v1/comments
+  - Integrate the use of a third-party REST API into the API from the fifth week.
+    - PersonAndCommentController class will combine data from the previous week's API and the third-party API and send that to the client.
+    - View combined data at GET /api/v1/people-and-comments.
+  - NOTE: An access token is required to view any comments you made or to create any new comments. You can get an access token at https://gorest.co.in/.
+    - The application looks for the token at src/resources/secret.properties file with the property name "gorest.api.access.token".
