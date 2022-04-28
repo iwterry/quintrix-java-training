@@ -3,6 +3,8 @@ package com.quintrix.java.training.iwterry.springboot.restapi.jparesttemplate.ht
 
 import com.quintrix.java.training.iwterry.springboot.restapi.jparesttemplate.dto.CommentDto;
 import com.quintrix.java.training.iwterry.springboot.restapi.jparesttemplate.httprequestservice.CommentService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.*;
 import org.springframework.stereotype.Component;
@@ -13,17 +15,22 @@ import java.util.List;
 public class CommentServiceImpl implements CommentService {
   private final RestTemplate restTemplate;
   private final String authToken;
+  private final Logger log;
   private final String url = "https://gorest.co.in/public/v2/comments";
 
   public CommentServiceImpl(RestTemplate restTemplate, String authToken) {
     this.restTemplate = restTemplate;
     this.authToken = authToken;
+    log = LoggerFactory.getLogger(this.getClass());
   }
 
   @Override
   public CommentDto addComment(CommentDto commentDto) {
     HttpHeaders httpHeaders = new HttpHeaders();
     httpHeaders.setBearerAuth(this.authToken);
+
+    // just doing some logging for practice
+    log.info("Making a POST request to {}", this.url);
 
     ResponseEntity<CommentDto> responseEntity = this.restTemplate.postForEntity(
       this.url,

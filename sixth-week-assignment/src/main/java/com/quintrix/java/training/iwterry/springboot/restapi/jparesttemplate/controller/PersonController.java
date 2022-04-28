@@ -33,37 +33,25 @@ public class PersonController {
   }
 
   @GetMapping("/{id}")
-  public ResponseEntity<?> getPersonById(@PathVariable("id") int id) {
-    try {
-      return new ResponseEntity<>(personService.getPersonById(id), HttpStatus.OK);
-    } catch (PersonNotFoundException e) {
-      return new ResponseEntity<>(e.getMessage(), HttpStatus.NOT_FOUND);
-    }
+  public ResponseEntity<PersonDto> getPersonById(@PathVariable("id") int id) {
+    return new ResponseEntity<>(personService.getPersonById(id), HttpStatus.OK);
   }
 
   @PostMapping
-  public ResponseEntity<?> createPerson(@RequestBody PersonDto personDto) {
+  public ResponseEntity<PersonDto> createPerson(@RequestBody PersonDto personDto) {
     PersonDto savedPersonDto = personService.createPerson(personDto);
     return new ResponseEntity<>(savedPersonDto, HttpStatus.CREATED);
   }
 
   @PutMapping("/{id}")
-  public ResponseEntity<?> updatePerson(@RequestBody PersonDto personDto, @PathVariable("id") int id) {
-    try {
-      PersonDto updatedPersonDto = personService.updatePerson(personDto, id);
-      return new ResponseEntity<>(updatedPersonDto, HttpStatus.OK);
-    } catch (PersonNotFoundException e) {
-      return new ResponseEntity<>(e.getMessage(), HttpStatus.NOT_FOUND);
-    }
+  public ResponseEntity<PersonDto> updatePerson(@RequestBody PersonDto personDto, @PathVariable("id") int id) {
+    PersonDto updatedPersonDto = personService.updatePerson(personDto, id);
+    return new ResponseEntity<>(updatedPersonDto, HttpStatus.OK);
   }
 
   @DeleteMapping("/{id}")
   public ResponseEntity<String> deletePerson(@PathVariable("id") int id) {
-    try {
-      personService.deletePerson(id);
-      return new ResponseEntity<>("Deletion was successful.", HttpStatus.OK);
-    } catch (PersonNotFoundException e) {
-      return new ResponseEntity<>(e.getMessage(), HttpStatus.NOT_FOUND);
-    }
+    personService.deletePerson(id);
+    return new ResponseEntity<>("Deletion was successful.", HttpStatus.OK);
   }
 }
