@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration>
+    <appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="error-logger" class="ch.qos.logback.core.FileAppender">
+        <file>logs/errors.log</file>
+        <encoder>
+            <pattern>%d{YYYY-MM-dd} at %d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <logger name="com.quintrix.java.training.iwterry.usingmongodb.exception" level="error">
+        <appender-ref ref="error-logger" />
+    </logger>
+
+    <root level="info">
+        <appender-ref ref="stdout" />
+    </root>
+</configuration>

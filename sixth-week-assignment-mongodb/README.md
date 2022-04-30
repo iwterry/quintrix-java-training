@@ -1,0 +1,11 @@
+Sixth week assignment involving using MongoDB with Spring Boot.
+- BookController is used for basic CRUD operation on the Book entity.
+  - GET /api/v1/books
+  - POST /api/v1/books
+  - GET /api/v1/books/{id}
+  - PUT /api/v1/books/{id}
+  - DELETE /api/v1/books/{id}
+- BookAndPersonController is used make a request to a local service that is on a different port.
+  - NOTE: assumes that the project from sixth week that has Person microservice is running on localhost on port 8080.
+  - GET /api/v1/books-and-people
+- NOTE: this project will run on localhost on port 8081.
