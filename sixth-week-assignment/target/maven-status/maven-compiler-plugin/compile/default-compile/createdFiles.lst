@@ -1,0 +1,17 @@
+com\quintrix\java\training\iwterry\springboot\restapi\jparesttemplate\service\impl\PersonServiceImpl.class
+com\quintrix\java\training\iwterry\springboot\restapi\jparesttemplate\dto\PersonDto.class
+com\quintrix\java\training\iwterry\springboot\restapi\jparesttemplate\controller\CommentController.class
+com\quintrix\java\training\iwterry\springboot\restapi\jparesttemplate\dto\PeopleAndCommentsDto.class
+com\quintrix\java\training\iwterry\springboot\restapi\jparesttemplate\dto\CommentDto.class
+com\quintrix\java\training\iwterry\springboot\restapi\jparesttemplate\controller\PersonController.class
+com\quintrix\java\training\iwterry\springboot\restapi\jparesttemplate\repository\PersonRepository.class
+com\quintrix\java\training\iwterry\springboot\restapi\jparesttemplate\controller\PersonAndCommentController.class
+com\quintrix\java\training\iwterry\springboot\restapi\jparesttemplate\exception\PersonNotFoundException.class
+com\quintrix\java\training\iwterry\springboot\restapi\jparesttemplate\service\PersonService.class
+com\quintrix\java\training\iwterry\springboot\restapi\jparesttemplate\httprequestservice\impl\CommentServiceImpl$1.class
+com\quintrix\java\training\iwterry\springboot\restapi\jparesttemplate\exception\CentralExceptionHandler.class
+com\quintrix\java\training\iwterry\springboot\restapi\jparesttemplate\httprequestservice\impl\CommentServiceImpl.class
+com\quintrix\java\training\iwterry\springboot\restapi\jparesttemplate\SixthWeekAssignmentApplication.class
+com\quintrix\java\training\iwterry\springboot\restapi\jparesttemplate\entity\Person.class
+com\quintrix\java\training\iwterry\springboot\restapi\jparesttemplate\httprequestservice\CommentService.class
+com\quintrix\java\training\iwterry\springboot\restapi\jparesttemplate\config\RestApiConfig.class
