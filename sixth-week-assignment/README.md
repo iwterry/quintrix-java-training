@@ -11,8 +11,8 @@ Sixth week's assignment
       - PersonAndCommentController class will combine data from the previous week's API and the third-party API and send that to the client.
       - View combined data at GET /api/v1/people-and-comments.
     - NOTE: An access token is required to view any comments you made or to create any new comments. You can get an access token at https://gorest.co.in/.
-      - The application looks for the token at src/resources/secret.properties file with the property name "gorest.api.access.token".
+      - The application looks for the token at src/main/resources/secret.properties file with the property name "gorest.api.access.token".
   - Use ControllerAdvice annotation and have central error handling
   - Use logging with SLF4J and LogBack
-    - See src/resources/logback.xml file for details.
+    - See src/main/resources/logback.xml file for details.
     - I am mainly using logging for CentralExceptionHandler class, but I did place a logging statement in CommentServiceImpl class to practice with having different logging levels for different packages.
