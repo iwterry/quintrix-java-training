@@ -1,0 +1,16 @@
+Week 7 assignments: 
+- develop a SOAP webservice client
+  - I am making requests to the SOAP service at http://webservices.daehosting.com/services/isbnservice.wso
+  - The following are good resources that I found useful:
+    - https://spring.io/guides/gs/consuming-web-service/
+    - https://www.baeldung.com/spring-soap-web-service
+    - https://documenter.getpostman.com/view/8854915/Szf26WHn
+  - I created a REST API that makes a call to my SOAP webservice client to validate an ISBN-13 value.
+  - The REST API has only one end point
+    - POST /api/v1/isbn13-validation
+      - sample request json:
+        - { "isbn13Value": "978-0374275631" }
+      - sample response json:
+        - { "isValid" : true }
+- perform unit testing using JUnit 5, Mockito, Hamcrest, etc.
+  - I performed unit testing on the controller and service layers of the REST API.
