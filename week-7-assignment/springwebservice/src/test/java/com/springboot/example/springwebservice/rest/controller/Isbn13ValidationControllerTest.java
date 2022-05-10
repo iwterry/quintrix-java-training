@@ -154,6 +154,7 @@ class Isbn13ValidationControllerTest {
     // then
     resultActions
       .andExpect(MockMvcResultMatchers.status().isOk())
+      .andExpect(MockMvcResultMatchers.content().contentType(MediaType.APPLICATION_JSON))
       .andExpect(MockMvcResultMatchers.jsonPath("$.size()", CoreMatchers.is(1)))
       .andExpect(MockMvcResultMatchers.jsonPath("$.isValid", CoreMatchers.is(booleanResult)));
 
